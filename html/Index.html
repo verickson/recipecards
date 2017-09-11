@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Recipe Card</title>		
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!--All other code should be above this for the css-->
+		<link rel="stylesheet" type="text/css" href="../css/Site.css">
+	</head>
+	<body>
+		<div id="Container">
+			<div id="header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<!--logo-->
+				<div class="pull-left logo">
+					<img src="../Images/Logo.svg"/>
+				</div>
+
+				<!--Select size of card-->
+				<!-- <div id="CardSize" class="dropdown">
+				    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Card Size
+				    <span class="caret"></span></button>
+				    <ul class="dropdown-menu">
+				      <li><a href="#">3x5</a></li>
+				      <li><a href="#">4x6</a></li>
+				      <li><a href="#">5x7</a></li>
+				    </ul>
+			  	</div> -->
+
+				<!--Select typeface of card-->
+				<div id="CardType" class="dropdown">
+				    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Typeface
+					    <span class="caret"></span>
+				    </button>
+				    <ul class="dropdown-menu">
+				      <li><a href="#" value="Arial">Arial</a></li>
+				      <li><a href="#" value="Gidole-Regular">Gidole</a></li>
+				      <li><a href="#" value="Mightype">Mightype</a></li>
+				    </ul>
+			  	</div>
+
+				<!--Print-->
+				<button id="Print" type="button" class="btn btn-info pull-right">
+				   Print
+				</button>
+			</div>
+			<div id="Content" class="">
+				<!--Select style of card-->
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 cardstyle">
+					<div class="selectstyle">
+						Select Style
+					</div>
+					<div id="CardStyle">
+						<a href="">
+							<img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="../Images/Recipe-Card-3x5_1.png"/>
+						</a>
+						<a href="">
+							<img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="../Images/Recipe-Card-3x5_2.png"/>
+						</a>
+						<a href="">
+							<img class="col-lg-6 col-md-6 col-sm-12 col-xs-12" src="../Images/Recipe-Card-3x5_3.png"/>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-8 cardarea">
+					<div id="Card" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card">
+						<div>
+							<div class="titlecontiner">
+								<!--title for recipe-->
+								<span class="title editable">Title of recipe</span>
+							</div>
+							<div class="servingcontiner">
+								<!--Servings-->
+								<span class="servheader">Servings</span>
+								<span class="editable">Type here</span>
+							</div>
+							<div class="ingredientcontiner">
+								<!--Ingredients-->
+								<span class="itemheader">Ingredients</span>
+								<span class="editable">Type here</span>
+							</div>
+							<div class="directioncontiner">
+								<!--Directions-->
+								<span class="itemheader">Directions</span>
+								<span class="editable">Type here</span>
+							</div>
+						</div>
+						<!--Image for the card-->
+						<img class="largecard" src="../Images/Recipe-Card-3x5_1.png"/>
+					</div>
+					<div id="AddNew" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+						<!--add new card-->
+						<button type="button" class="btn btn-default">
+						  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add a new card
+						</button>
+					</div>
+				</div>		
+			</div>
+		</div>
+
+		<div id="DefaultCard" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 card" style="display:none;">
+			<div>
+				<div class="titlecontiner">
+					<!--title for recipe-->
+					<span class="title editable">Title of recipe</span>
+				</div>
+				<div class="servingcontiner">
+					<!--Servings-->
+					<span class="servheader">Servings</span>
+					<span class="editable">Type here</span>
+				</div>
+				<div class="ingredientcontiner">
+					<!--Ingredients-->
+					<span class="itemheader">Ingredients</span>
+					<span class="editable">Type here</span>
+				</div>
+				<div class="directioncontiner">
+					<!--Directions-->
+					<span class="itemheader">Directions</span>
+					<span class="editable">Type here</span>
+				</div>
+			</div>
+			<!--Image for the card-->
+			<img class="largecard" src="../Images/Recipe-Card-3x5_1.png"/>
+		</div>
+		
+		<div id="printdiv" style="display:none;">
+		</div>
+
+		<!--Always load jquery first-->
+		<script
+			  src="https://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+		<!--Then the regular code-->
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+		</script>
+
+		<!--javascript file last-->
+		<script type="text/javascript" src="../js/main.js"></script>
+	</body>
+</html>
